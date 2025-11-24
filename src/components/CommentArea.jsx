@@ -15,10 +15,10 @@ class CommentArea extends Component {
     try {
       let response = await fetch(
         'https://striveschool-api.herokuapp.com/api/comments/' +
-          this.props.asin,
+        this.props.bookID,
         {
           headers: {
-            Authorization: 'Bearer inserisci-qui-il-tuo-token',
+            Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OTI0NTgwNWRiYzJkODAwMTVmMDAxNWMiLCJpYXQiOjE3NjM5ODk1MDksImV4cCI6MTc2NTE5OTEwOX0.jcwgWRmWkLMQqmqlmC_hNn9fUXdWqautYge-s_hWSrA',
           },
         }
       )
